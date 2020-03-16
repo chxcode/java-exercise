@@ -11,7 +11,7 @@ import java.util.List;
  * @Author changxuan
  * @Date 2020-03-16 22:22
  **/
-public class Test {
+public class ReflectTest {
     public static void main(String[] args) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
 //        String str = "1";
 //        Integer i = 1;
