@@ -34,7 +34,7 @@ public class ReflectTest {
         mStr.invoke(a, "hello", "world");
 
 
-        // 使用反射绕过范型类型检查
+        // 使用反射绕过泛型的类型检查
         List<String> strings = new ArrayList<>();
         strings.add("hello");
 
