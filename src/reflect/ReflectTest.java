@@ -1,18 +1,19 @@
 package reflect;
 
+import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @ClassName Test
+ * @ClassName ArrayTest
  * @Description
  * @Author changxuan
  * @Date 2020-03-16 22:22
  **/
 public class ReflectTest {
-    public static void main(String[] args) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+    public static void main(String[] args) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException, ClassNotFoundException, InstantiationException {
 //        String str = "1";
 //        Integer i = 1;
 //        ClassUtils.printAllProperty(i);
@@ -42,6 +43,25 @@ public class ReflectTest {
         listAdd.invoke(strings, 2);
 
         System.out.println(strings);
+
+
+        // 1.通过类装载器获取 Car 对象
+        ClassLoader loader = Thread.currentThread().getContextClassLoader();
+        Class clazz = loader.loadClass("reflect.Car");
+
+        // 2.获取类的默认构造器对象并通过它实例化 Car
+        Constructor constructor = clazz.getDeclaredConstructor((Class[]) null);
+        Car car = (Car)constructor.newInstance();
+
+        // 3.通过反射方法设置属性
+        Method setBrand = clazz.getMethod("setBrand", String.class);
+        setBrand.invoke(car, "宝马");
+        Method setColor = clazz.getMethod("setColor", String.class);
+        setColor.invoke(car, "白色");
+        Method setMaxSpeed = clazz.getMethod("setMaxSpeed", int.class);
+        setMaxSpeed.invoke(car, 500);
+
+        System.out.println(car.toString());
     }
 }
 

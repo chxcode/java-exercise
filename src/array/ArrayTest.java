@@ -1,12 +1,12 @@
 package array;
 
 /**
- * @ClassName Test
+ * @ClassName ArrayTest
  * @Description
  * @Author changxuan
  * @Date 2020-03-14 15:35
  **/
-public class Test {
+public class ArrayTest {
     public static void main(String[] args){
         char a = 'A';
         char z = '|';
