@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * @ClassName WaitAndNotify
- * @Description
+ * @Description 生产者消费者
  * @Author changxuan
  * @Date 2020-04-13 22:43
  **/
@@ -15,43 +15,48 @@ public class WaitAndNotify {
     public static void main(String[] args) throws InterruptedException {
 
         new Thread(()->{
-            synchronized (container){
-                while (container.size() == 0){
+            while (true) {
+                synchronized (container) {
+                    while (container.size() == 0) {
+                        try {
+                            container.wait();
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                    System.out.println("消费者消费鸡蛋");
+                    container.remove(0);
                     try {
-                        container.wait();
+                        Thread.sleep(1000);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
+                    container.notifyAll();
                 }
-                System.out.println("消费者消费鸡蛋");
-                container.remove(0);
-                try {
-                    Thread.sleep(1000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                container.notifyAll();
             }
         }).start();
 
         new Thread(()->{
-            synchronized (container){
-                while (container.size() == MAX_SIZE){
+            while (true) {
+                synchronized (container) {
+                    while (container.size() == MAX_SIZE) {
+                        try {
+                            container.wait();
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                    System.out.println("生产者生产鸡蛋");
+                    container.add("生产鸡蛋");
                     try {
-                        container.wait();
+                        Thread.sleep(1000);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
+                    container.notifyAll();
                 }
-                System.out.println("生产者生产鸡蛋");
-                container.add("生产鸡蛋");
-                try {
-                    Thread.sleep(1000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                container.notifyAll();
             }
         }).start();
+
     }
 }
