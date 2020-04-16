@@ -1,7 +1,7 @@
 package multithread;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.LinkedList;
+import java.util.Queue;
 
 /**
  * @ClassName WaitAndNotify
@@ -10,8 +10,8 @@ import java.util.List;
  * @Date 2020-04-13 22:43
  **/
 public class WaitAndNotify {
-    private static final Integer MAX_SIZE = 1;
-    private static List<String> container = new ArrayList<>();
+    private static final Integer MAX_SIZE = 3;
+    private static Queue<String> container = new LinkedList<String>();
     public static void main(String[] args) throws InterruptedException {
 
         new Thread(()->{
@@ -25,7 +25,7 @@ public class WaitAndNotify {
                         }
                     }
                     System.out.println("消费者消费鸡蛋");
-                    container.remove(0);
+                    container.poll();
                     try {
                         Thread.sleep(1000);
                     } catch (InterruptedException e) {
@@ -47,7 +47,7 @@ public class WaitAndNotify {
                         }
                     }
                     System.out.println("生产者生产鸡蛋");
-                    container.add("生产鸡蛋");
+                    container.offer("鸡蛋");
                     try {
                         Thread.sleep(1000);
                     } catch (InterruptedException e) {
