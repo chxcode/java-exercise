@@ -14,5 +14,9 @@ public class ArrayTest {
         System.out.println((int)a);
         System.out.println((int)z);
         System.out.println(arr);
+
+        String address=null;
+        String[] splitAddress=address.split(",");
+        System.out.println(splitAddress.length);
     }
 }
