@@ -20,6 +20,19 @@ public class Exercise {
         //System.out.println(number[0].length);
         System.out.println(Find(7,number));
 
+        User userA = new User();
+        userA.name = "test";
+        userA.age = 9;
+        User userC = new User();
+        userC.name = "test";
+        userC.age = 10;
+        System.out.println(userA.toString());
+        User userB = userA;
+        System.out.println(userB.toString());
+        userA = userC;
+        System.out.println(userA);
+        System.out.println(userB.toString());
+
     }
 
     public static boolean Find(int target, int [][] array) {
@@ -44,5 +57,16 @@ public class Exercise {
             }
         }
         return false;
+    }
+
+}
+class User{
+    public String name;
+
+    public Integer age;
+
+    @Override
+    public String toString() {
+        return super.toString();
     }
 }
