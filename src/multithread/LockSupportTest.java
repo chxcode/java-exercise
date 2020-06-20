@@ -11,6 +11,7 @@ import java.util.concurrent.locks.LockSupport;
 public class LockSupportTest {
     public static void main(String[] args) {
         testOne();
+        //testTwo();
     }
 
 
@@ -18,5 +19,11 @@ public class LockSupportTest {
         System.out.println("begin park");
         LockSupport.park();
         System.out.println("end park");
+    }
+
+    public static void testTwo(){
+        System.out.println("begin");
+        LockSupport.parkNanos(10000);
+        System.out.println("end");
     }
 }
