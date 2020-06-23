@@ -8,6 +8,12 @@ package algorithm.queue;
 public class Test {
 
     public static void main(String[] args) {
-
+        Queue queue = new Queue();
+        for (int i = 0; i < 10; i++){
+            queue.enqueue(i);
+        }
+        do {
+            System.out.println(queue.dequeue());
+        }while (queue.first != null);
     }
 }
