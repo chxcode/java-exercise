@@ -8,9 +8,9 @@ package algorithm.list;
  **/
 public class Node {
 
-    int data;
+    public int data;
 
-    Node next = null;
+    public Node next = null;
 
     public Node(int data){
         this.data = data;
