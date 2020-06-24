@@ -17,7 +17,7 @@ public class Stack {
      */
     int pop(){
         if (top == null){
-            throw new  RuntimeException("");
+            throw new  RuntimeException("this stack is empty");
         }
         int item = top.data;
         top = top.next;
@@ -31,5 +31,30 @@ public class Stack {
         Node node = new Node(data);
         node.next = top;
         top = node;
+    }
+
+    int peek(){
+        if (top == null){
+            throw new  RuntimeException("this stack is empty");
+        }
+        return this.top.data;
+    }
+
+    Boolean isEmpty(){
+        return top == null ? true : false;
+    }
+
+    void sort(){
+        Stack help = new Stack();
+        while (!this.isEmpty()){
+            int cur = this.pop();
+            while (!help.isEmpty() && help.peek()<cur){
+                this.push(help.pop());
+            }
+            help.push(cur);
+        }
+        while (!help.isEmpty()){
+            this.push(help.pop());
+        }
     }
 }
