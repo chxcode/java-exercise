@@ -12,7 +12,7 @@ import java.util.Queue;
 public class WaitAndNotify {
     private static final Integer MAX_SIZE = 3;
     private static Queue<String> container = new LinkedList<String>();
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
 
         new Thread(()->{
             while (true) {
