@@ -15,26 +15,37 @@ public class ClimbingStairs {
         System.out.println(countWaysDP(4, map));
         System.out.println(count(4));
     }
-    public static int countWaysDP(int n, int[] map){
-        if (n < 0){
+
+    public static int countWaysDP(int n, int[] map) {
+        if (n < 0) {
             return 0;
-        }else if (n == 0){
+        } else if (n == 0) {
             return 1;
-        }else if (map[n] > -1) {
+        } else if (map[n] > -1) {
             return map[n];
-        }else {
-            map[n] = countWaysDP(n-1, map)+countWaysDP(n-2, map)+countWaysDP(n-3, map);
+        } else {
+            map[n] = countWaysDP(n - 1, map) + countWaysDP(n - 2, map) + countWaysDP(n - 3, map);
             return map[n];
         }
     }
 
-    public static int count(int n){
-        int[] dp = new int[n+1];
+    public static int count(int n) {
+        switch (n) {
+            case 0:
+                return 0;
+            case 1:
+                return 1;
+            case 2:
+                return 2;
+            case 3:
+                return 4;
+        }
+        int[] dp = new int[n + 1];
         dp[1] = 1;
         dp[2] = 2;
         dp[3] = 4;
-        for (int i = 4; i <= n; i++){
-            dp[i] = dp[i-1]+dp[i-2]+dp[i-3];
+        for (int i = 4; i <= n; i++) {
+            dp[i] = dp[i - 1] + dp[i - 2] + dp[i - 3];
         }
         return dp[n];
     }
