@@ -18,5 +18,10 @@ public class Test {
         String str1 = "1111";
         String str2 = "1111";
         System.out.println(str1 == str2);
+
+        SizeEnum[] values = SizeEnum.values();
+        for (SizeEnum item : values){
+            System.out.println("Number:"+item.getId()+",Msg:"+item.name());
+        }
     }
 }
