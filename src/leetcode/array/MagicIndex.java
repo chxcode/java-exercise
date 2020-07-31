@@ -6,7 +6,7 @@ package leetcode.array;
  * @Author changxuan
  * @Date 2020/7/31 下午9:54
  **/
-public class MagicIndexLcci {
+public class MagicIndex {
 
     public static void main(String[] args) {
         int[] arrays = {0};

@@ -8,7 +8,7 @@ import java.util.Arrays;
  * @Author changxuan
  * @Date 2020/7/31 下午10:15
  **/
-public class MissNumberLcci {
+public class MissNumber {
 
     /**
      * 另一种思路： 既然是连续的数字，可以用不缺数字的总和减去数字的实际总和
