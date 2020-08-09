@@ -8,9 +8,11 @@ package leetcode.tree;
  **/
 public class LowestCommonAncestorBinarySearchTree {
     public static TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        // 判断叶子结点
         if ( root == null ){
             return null;
         }
+        // 判断当前节点是否在两节点之间 如果在就是当前节点
         if (between(p.val, q.val, root.val))
             return root;
         TreeNode left = lowestCommonAncestor(root.left, p, q);
