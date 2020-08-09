@@ -31,11 +31,12 @@ public class MaximumDepthOfBinaryTree {
         int rightLevel = maxDepth(root.right);
         return leftLevel > rightLevel ? leftLevel+1: rightLevel+1;
     }
+    static class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+        TreeNode(int x) { val = x; }
+    }
 }
 
-class TreeNode {
-      int val;
-      TreeNode left;
-      TreeNode right;
-      TreeNode(int x) { val = x; }
- }
+
