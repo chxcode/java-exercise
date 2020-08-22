@@ -6,6 +6,13 @@ package leetcode.array;
  * @Date: 22:39 2020/8/22
  **/
 public class RemoveElement {
+
+    /**
+     * 快慢指针
+     * @param nums
+     * @param val
+     * @return
+     */
     public int removeElement(int[] nums, int val) {
         if(nums == null || nums.length == 0) return 0;
         int p = 0;
