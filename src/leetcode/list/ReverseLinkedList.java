@@ -1,4 +1,4 @@
-package leetcode.tree;
+package leetcode.list;
 
 /**
  * @ClassName ReverseLinkedList
