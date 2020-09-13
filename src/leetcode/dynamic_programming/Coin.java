@@ -2,11 +2,11 @@ package leetcode.dynamic_programming;
 
 /**
  * @ClassName CoinLcci
- * @Description 硬币
+ * @Description 硬币 https://leetcode-cn.com/problems/coin-lcci/
  * @Author changxuan
  * @Date 2020/7/26 下午11:04
  **/
-public class CoinLcci {
+public class Coin {
 
     public static void main(String[] args) {
         System.out.println(waysToChange(5));
