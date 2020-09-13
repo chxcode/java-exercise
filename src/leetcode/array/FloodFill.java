@@ -32,18 +32,4 @@ public class FloodFill {
         }
         return;
     }
-
-    public void dfsCopy(int[][] image, int x, int y, int newColor, int oldColor){
-        if (x < 0 || x > image.length-1 || y < 0 || y > image[0].length-1){
-            return;
-        }
-        if (image[x][y] == oldColor){
-            image[x][y] = newColor;
-            dfs(image, x-1, y, newColor, oldColor);
-            dfs(image, x+1, y, newColor, oldColor);
-            dfs(image, x, y-1, newColor, oldColor);
-            dfs(image, x, y+1, newColor, oldColor);
-        }
-        return;
-    }
 }
