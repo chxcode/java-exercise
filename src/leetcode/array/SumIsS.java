@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * @ClassName SumIsS
- * @Description 和是S的两个数字
+ * @Description 和是S的两个数字 https://leetcode-cn.com/problems/he-wei-sde-liang-ge-shu-zi-lcof/
  * @Author changxuan
  * @Date 2020/9/3 下午9:49
  **/
