@@ -2,7 +2,7 @@ package leetcode.bitwise;
 
 /**
  * @ClassName PowerOfTwo
- * @Description 2的幂
+ * @Description 2的幂 https://leetcode-cn.com/problems/power-of-two/
  * @Author changxuan
  * @Date 2020/8/9 下午10:00
  **/
