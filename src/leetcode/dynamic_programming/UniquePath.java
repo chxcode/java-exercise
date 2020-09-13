@@ -1,5 +1,7 @@
 package leetcode.dynamic_programming;
 
+import java.util.Arrays;
+
 /**
  * @ClassName UniquePath
  * @Description A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below).
@@ -15,8 +17,7 @@ public class UniquePath {
 
     public static int uniquePaths(int m, int n) {
         int[] temp = new int[m];
-        for (int i = 0; i < m; i++)
-            temp[i] = 1;
+        Arrays.fill(temp,1);
         for (int j = 0; j < n-1; j++){
             for (int c = 1; c < m; c++){
                 temp[c] = temp[c-1] + temp[c];
