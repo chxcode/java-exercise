@@ -1,4 +1,4 @@
-package leetcode.bitwise;
+package leetcode.array;
 
 /**
  * @ClassName MajorityElement
