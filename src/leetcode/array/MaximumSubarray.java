@@ -1,9 +1,9 @@
-package leetcode.divide_conquer;
+package leetcode.array;
 
 /**
  * @Author: ChangXuan
  * @Decription: Given an integer array nums, find the contiguous subarray (containing at least one number)
- * which has the largest sum and return its sum.
+ * which has the largest sum and return its sum. https://leetcode-cn.com/problems/maximum-subarray/
  * @Date: 17:39 2020/6/26
  **/
 public class MaximumSubarray {
