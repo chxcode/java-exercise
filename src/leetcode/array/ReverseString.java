@@ -2,7 +2,7 @@ package leetcode.array;
 
 /**
  * @ClassName ReverseString
- * @Description 反转数组
+ * @Description 反转数组 https://leetcode-cn.com/problems/reverse-string/
  * @Author changxuan
  * @Date 2020/8/6 下午9:09
  **/
