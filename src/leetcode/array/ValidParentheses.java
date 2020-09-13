@@ -5,7 +5,7 @@ import java.util.Stack;
 
 /**
  * @ClassName ValidParentheses
- * @Description 有效括号
+ * @Description 有效括号 https://leetcode-cn.com/problems/valid-parentheses/
  * @Author changxuan
  * @Date 2020/8/14 下午9:12
  **/
