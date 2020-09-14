@@ -2,7 +2,7 @@ package leetcode.bitwise;
 
 /**
  * @ClassName SingleNumber
- * @Description 只出现一次的数字
+ * @Description 只出现一次的数字 https://leetcode-cn.com/problems/single-number/
  * @Author changxuan
  * @Date 2020/8/14 下午9:49
  **/

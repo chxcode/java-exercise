@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * @ClassName ContinuousSubarraySum
- * @Description 前缀和
+ * @Description 连续的子数组和 https://leetcode-cn.com/problems/continuous-subarray-sum/
  * @Author changxuan
  * @Date 2020/7/27 下午11:54
  **/

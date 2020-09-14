@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * @ClassName ProductOfArrayExceptSelf
- * @Description 除自身以外数组的乘积
+ * @Description 除自身以外数组的乘积 https://leetcode-cn.com/problems/product-of-array-except-self/
  * @Author changxuan
  * @Date 2020/8/7 下午9:13
  **/

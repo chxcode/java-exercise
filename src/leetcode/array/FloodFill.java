@@ -2,7 +2,7 @@ package leetcode.array;
 
 /**
  * @ClassName FloodFill
- * @Description 图像渲染
+ * @Description 图像渲染 https://leetcode-cn.com/problems/flood-fill/
  * @Author changxuan
  * @Date 2020/8/16 下午7:39
  **/
@@ -29,20 +29,6 @@ public class FloodFill {
             dfs(image, x+1, y, newColor, originColor);
             dfs(image, x, y-1, newColor, originColor);
             dfs(image, x, y+1, newColor, originColor);
-        }
-        return;
-    }
-
-    public void dfsCopy(int[][] image, int x, int y, int newColor, int oldColor){
-        if (x < 0 || x > image.length-1 || y < 0 || y > image[0].length-1){
-            return;
-        }
-        if (image[x][y] == oldColor){
-            image[x][y] = newColor;
-            dfs(image, x-1, y, newColor, oldColor);
-            dfs(image, x+1, y, newColor, oldColor);
-            dfs(image, x, y-1, newColor, oldColor);
-            dfs(image, x, y+1, newColor, oldColor);
         }
         return;
     }

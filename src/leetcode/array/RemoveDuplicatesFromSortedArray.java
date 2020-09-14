@@ -2,7 +2,7 @@ package leetcode.array;
 
 /**
  * @ClassName RemoveDuplicatesFromSortedArray
- * @Description  删除排序数组中的重复项
+ * @Description  删除排序数组中的重复项 https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/
  * @Author changxuan
  * @Date 2020/8/19 下午12:50
  **/

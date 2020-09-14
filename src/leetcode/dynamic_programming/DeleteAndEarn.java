@@ -2,7 +2,7 @@ package leetcode.dynamic_programming;
 
 /**
  * @ClassName DeleteAndEarn
- * @Description
+ * @Description 删除与获得点数 https://leetcode-cn.com/problems/delete-and-earn/
  * @Author changxuan
  * @Date 2020/7/26 下午9:53
  **/

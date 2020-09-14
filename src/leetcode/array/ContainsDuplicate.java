@@ -4,7 +4,7 @@ import java.util.HashSet;
 
 /**
  * @ClassName ContainsDuplicate
- * @Description 存在重复元素
+ * @Description 存在重复元素 https://leetcode-cn.com/problems/contains-duplicate/
  * @Author changxuan
  * @Date 2020/8/10 下午8:32
  **/

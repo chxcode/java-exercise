@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * @ClassName NumArray
- * @Description 区域和检索 - 数组不可变
+ * @Description 区域和检索 - 数组不可变 https://leetcode-cn.com/problems/range-sum-query-immutable/
  * @Author changxuan
  * @Date 2020/8/1 下午9:14
  **/

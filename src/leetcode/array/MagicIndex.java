@@ -2,7 +2,7 @@ package leetcode.array;
 
 /**
  * @ClassName MagicIndexLcci
- * @Description 魔术索引
+ * @Description 魔术索引 https://leetcode-cn.com/problems/magic-index-lcci/
  * @Author changxuan
  * @Date 2020/7/31 下午9:54
  **/

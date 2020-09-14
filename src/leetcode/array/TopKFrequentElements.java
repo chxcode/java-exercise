@@ -6,7 +6,7 @@ import java.util.PriorityQueue;
 
 /**
  * @ClassName TopKFrequentElements
- * @Description 前 K 个高频元素
+ * @Description 前 K 个高频元素 https://leetcode-cn.com/problems/top-k-frequent-elements/
  * @Author changxuan
  * @Date 2020/9/7 下午8:04
  **/
@@ -37,7 +37,6 @@ public class TopKFrequentElements {
             }
         }
         // 取出最小堆中的元素
-        // List<Integer> res = new ArrayList<>();
         int[] res = new int[k];
         int i = 0;
         while (!pq.isEmpty()) {
