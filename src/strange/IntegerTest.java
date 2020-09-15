@@ -11,6 +11,14 @@ public class IntegerTest {
         Integer one = 1;
         test(one);
         //System.out.println(one == 1);
+        switch (one){
+            case 2:
+                System.out.println(1);
+            case 1:
+                System.out.println(2);
+            case 3:
+                System.out.println(3);
+        }
     }
 
     public static void test(Integer one){
