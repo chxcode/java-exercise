@@ -4,7 +4,8 @@ import java.util.Stack;
 
 /**
  * @ClassName LowestCommonAncestor
- * @Description 最近公共祖先
+ * @Description 最近公共祖先 https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-zui-jin-gong-gong-zu-xian-lcof/
+ * 待整理
  * @Author changxuan
  * @Date 2020/8/8 下午8:07
  **/
