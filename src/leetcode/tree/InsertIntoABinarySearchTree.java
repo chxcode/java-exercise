@@ -12,6 +12,7 @@ public class InsertIntoABinarySearchTree {
         TreeNode right;
         TreeNode(int x) { val = x; }
     }
+    // TODO 整理
     public TreeNode insertIntoBST(TreeNode root, int val) {
         //边界条件判断
         if (root == null)
