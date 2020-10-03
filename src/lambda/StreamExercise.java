@@ -12,6 +12,12 @@ import java.util.stream.Collectors;
  * @Date: 11:47 2020/10/3
  **/
 public class StreamExercise {
+
+    /**
+     * 收集器用法
+     * Collectors toList, toMap, joining, groupingBy
+     */
+
     public static void main(String[] args) {
         Student hong = new Student("xiaohong", 19);
         Student gang = new Student("xiaogang", 10);
