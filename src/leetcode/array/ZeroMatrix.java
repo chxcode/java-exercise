@@ -7,6 +7,10 @@ package leetcode.array;
  * @Date 2020/9/10 下午8:23
  **/
 public class ZeroMatrix {
+    /**
+     * 零矩阵
+     * @param matrix 矩阵
+     */
     public void setZeroes(int[][] matrix) {
         boolean[] row = new boolean[matrix.length];
         boolean[] column = new boolean[matrix[0].length];
