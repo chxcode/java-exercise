@@ -106,6 +106,7 @@ public class StreamExercise {
 
     /**
      * 去重
+     * 使用 equal 方法进行判断是否重复
      * @param students 学生集合
      */
     public static void distinct(List<Student> students) {
