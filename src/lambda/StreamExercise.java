@@ -265,6 +265,11 @@ public class StreamExercise {
         students.stream()
                 .forEach(student -> System.out.println(student.toString()));
         students.stream()
+                .forEach(student -> {
+                    System.out.println(student.getName());;
+                    System.out.println(student.toString());
+                });
+        students.stream()
                 .forEach(System.out::println);
     }
 
