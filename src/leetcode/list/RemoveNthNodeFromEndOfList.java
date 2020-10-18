@@ -6,6 +6,10 @@ package leetcode.list;
  * @Date: 15:23 2020/10/18
  **/
 public class RemoveNthNodeFromEndOfList {
+
+    // 不需要遍历两遍的题解
+    // https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/solution/dong-hua-tu-jie-leetcode-di-19-hao-wen-ti-shan-chu/
+
     public ListNode removeNthFromEnd(ListNode head, int n) {
         if (head == null) return null;
         ListNode curr = head, temp = head, pre = head;
