@@ -10,6 +10,8 @@ public class ReorganizeString {
     public static void main(String[] args) {
         char[] a = new char[4];
         System.out.println(a.length);
+        int cx = 0;
+        System.out.println(cx++ == 1);
     }
     public String reorganizeString(String S) {
         //把字符串S转化为字符数组
