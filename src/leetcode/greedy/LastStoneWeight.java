@@ -1,6 +1,7 @@
 package leetcode.greedy;
 
 import java.util.Arrays;
+import java.util.PriorityQueue;
 
 /**
  * @ClassName LastStoneWeight
@@ -29,4 +30,22 @@ public class LastStoneWeight {
         }
         return stones[len-1];
     }
+
+    // 改进空间 利用最大堆的性质 以减少排序操作
+    public int lastStoneWeightPro(int[] stones) {
+        PriorityQueue<Integer> pq = new PriorityQueue<Integer>((a, b) -> b - a);
+        for (int stone : stones) {
+            pq.offer(stone);
+        }
+
+        while (pq.size() > 1) {
+            int a = pq.poll();
+            int b = pq.poll();
+            if (a > b) {
+                pq.offer(a - b);
+            }
+        }
+        return pq.isEmpty() ? 0 : pq.poll();
+    }
+
 }
