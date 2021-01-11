@@ -32,5 +32,7 @@ public class TestUnsafe {
         TestUnsafe testUnsafe = new TestUnsafe();
         Boolean success = unsafe.compareAndSwapInt(testUnsafe, stateOffset, 0, 1);
         System.out.println(success);
+        // 输出 1
+        System.out.println(testUnsafe.state);
     }
 }
