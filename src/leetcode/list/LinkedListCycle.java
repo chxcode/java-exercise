@@ -26,6 +26,24 @@ public class LinkedListCycle {
         }
         return fast;
     }
+
+    /**
+     * 环形链表 https://leetcode-cn.com/problems/linked-list-cycle/
+     * @param head
+     * @return
+     */
+    public boolean hasCycle(ListNode head) {
+        if (head == null || head.next == null) return false;
+        ListNode f = head;
+        ListNode b = head;
+        while(f != null && b!=null) {
+            b = b.next;
+            f = f.next != null ? f.next.next : null;
+            // 快指针与慢指针重逢
+            if (f == b) return true;
+        }
+        return false;
+    }
 }
 class ListNode {
     int val;
