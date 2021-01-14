@@ -33,7 +33,6 @@ public class LinkedListCycle {
      * @return
      */
     public boolean hasCycle(ListNode head) {
-        if (head == null || head.next == null) return false;
         ListNode f = head;
         ListNode b = head;
         while(f != null && b!=null) {
